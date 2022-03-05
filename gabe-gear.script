@@ -26,16 +26,12 @@ sprite.SetPosition(Window.GetWidth() / 2 - image.GetWidth() / 2, Window.GetHeigh
 fun refresh() {
     frame++;
 
-    if (frame % 2 != 1) {
-        fr = frame / 2;
+    if (frame < 172) {
+        image = Image(PadZero(frame, 3)+".png");
 
-        if (fr < 172) {
-            image = Image(PadZero(fr, 3)+".png");
+        image = image.Rotate(Math.Pi / 2.0);
 
-            image = image.Rotate(Math.Pi / 2.0);
-
-            sprite.SetImage(image);
-        }
+        sprite.SetImage(image);
     }
 }
 
