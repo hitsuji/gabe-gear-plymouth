@@ -1,0 +1,41 @@
+[Plymouth Theme]
+Name=gabe-gear
+Description=Based on Gabe Gear by c_i3
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/gabe-gear-plymouth/frames
+ScriptFile=/usr/share/plymouth/themes/gabe-gear-plymouth/gabe-gear.script
+
+[boot-up]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[shutdown]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[reboot]
+UseEndAnimation=false
+UseFirmwareBackground=false
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Installing Updates...
+_SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Upgrading System...
+_SubTitle=Do not turn off your computer
+
+[firmware-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+_Title=Upgrading Firmware...
+_SubTitle=Do not turn off your computer
